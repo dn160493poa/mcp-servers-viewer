@@ -1,9 +1,9 @@
 {
   "name": "mcp-servers-viewer",
   "displayName": "MCP Servers Viewer",
-  "description": "Sidebar viewer for Cursor/VS Code MCP servers with live Connected / Error status and tool counts.",
-  "version": "0.1.0",
-  "publisher": "olehpopkov",
+  "description": "Sidebar viewer for Cursor/VS Code MCP servers with live Connected / Error status and tool counts. Donations: BTC 18yNCs2gDa1dGoU9XbLFC2wBH7kqY3Zr8e · USDT TRC20 TS6NFd5GgtMmmG2jhm8VcrtU6VGSuH1ohk",
+  "version": "0.1.1",
+  "publisher": "dn160493poa",
   "license": "MIT",
   "icon": "media/icon.png",
   "galleryBanner": {
@@ -12,12 +12,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/olehpopkov/mcp-servers-viewer"
+    "url": "https://github.com/dn160493poa/mcp-servers-viewer"
   },
   "bugs": {
-    "url": "https://github.com/olehpopkov/mcp-servers-viewer/issues"
+    "url": "https://github.com/dn160493poa/mcp-servers-viewer/issues"
   },
-  "homepage": "https://github.com/olehpopkov/mcp-servers-viewer#readme",
+  "homepage": "https://github.com/dn160493poa/mcp-servers-viewer#readme",
   "engines": {
     "vscode": "^1.74.0"
   },
