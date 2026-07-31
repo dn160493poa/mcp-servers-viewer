@@ -1,0 +1,103 @@
+{
+  "name": "mcp-servers-viewer",
+  "displayName": "MCP Servers Viewer",
+  "description": "Sidebar viewer for Cursor/VS Code MCP servers with live Connected / Error status and tool counts.",
+  "version": "0.1.0",
+  "publisher": "olehpopkov",
+  "license": "MIT",
+  "icon": "media/icon.png",
+  "galleryBanner": {
+    "color": "#1e1e1e",
+    "theme": "dark"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/olehpopkov/mcp-servers-viewer"
+  },
+  "bugs": {
+    "url": "https://github.com/olehpopkov/mcp-servers-viewer/issues"
+  },
+  "homepage": "https://github.com/olehpopkov/mcp-servers-viewer#readme",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Other",
+    "Visualization"
+  ],
+  "keywords": [
+    "mcp",
+    "model context protocol",
+    "cursor",
+    "servers",
+    "tools",
+    "status"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "mcpServersViewer",
+          "title": "MCP Servers Viewer",
+          "icon": "media/icon.svg"
+        }
+      ]
+    },
+    "views": {
+      "mcpServersViewer": [
+        {
+          "id": "mcpServersViewer.servers",
+          "name": "MCP SERVERS"
+        }
+      ],
+      "explorer": [
+        {
+          "id": "mcpServersViewer.explorer",
+          "name": "MCP SERVERS",
+          "contextualTitle": "MCP SERVERS"
+        }
+      ]
+    },
+    "commands": [
+      {
+        "command": "mcpServersViewer.refresh",
+        "title": "MCP Servers Viewer: Refresh",
+        "icon": "$(refresh)"
+      },
+      {
+        "command": "mcpServersViewer.open",
+        "title": "MCP Servers Viewer: Open"
+      },
+      {
+        "command": "mcpServersViewer.openMcpConfig",
+        "title": "MCP Servers Viewer: Open MCP Config",
+        "icon": "$(edit)"
+      }
+    ],
+    "menus": {
+      "view/title": [
+        {
+          "command": "mcpServersViewer.refresh",
+          "when": "view =~ /mcpServersViewer\\./",
+          "group": "navigation"
+        },
+        {
+          "command": "mcpServersViewer.openMcpConfig",
+          "when": "view =~ /mcpServersViewer\\./",
+          "group": "navigation"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "package": "vsce package --allow-missing-repository",
+    "publish": "vsce publish"
+  },
+  "devDependencies": {
+    "@vscode/vsce": "^3.3.2"
+  }
+}
