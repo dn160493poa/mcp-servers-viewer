@@ -2,8 +2,8 @@
   "name": "mcp-servers-viewer",
   "displayName": "MCP Servers Viewer",
   "description": "Sidebar viewer for Cursor/VS Code MCP servers with live Connected / Error status and tool counts. Donations: BTC 18yNCs2gDa1dGoU9XbLFC2wBH7kqY3Zr8e · USDT TRC20 TS6NFd5GgtMmmG2jhm8VcrtU6VGSuH1ohk",
-  "version": "0.1.1",
-  "publisher": "dn160493poa",
+  "version": "0.1.2",
+  "publisher": "OlehPopkov",
   "license": "MIT",
   "icon": "media/icon.png",
   "galleryBanner": {

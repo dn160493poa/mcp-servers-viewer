@@ -24,7 +24,7 @@ Expand a connected server to see its tools.
 ### From VSIX
 
 ```bash
-cursor --install-extension mcp-servers-viewer-0.1.1.vsix
+cursor --install-extension mcp-servers-viewer-0.1.2.vsix
 ```
 
 Then reload the window.
@@ -34,7 +34,7 @@ Then reload the window.
 ```bash
 npm install
 npx vsce package
-cursor --install-extension ./mcp-servers-viewer-0.1.1.vsix
+cursor --install-extension ./mcp-servers-viewer-0.1.2.vsix
 ```
 
 ## Commands
