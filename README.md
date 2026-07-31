@@ -2,6 +2,8 @@
 
 Sidebar viewer for **Cursor** (and VS Code-compatible) MCP servers.
 
+![MCP Servers Viewer sidebar](media/screenshot.png)
+
 Shows live status from your local Cursor runtime:
 
 - **Connected (N tools)** — green check
@@ -21,10 +23,18 @@ Expand a connected server to see its tools.
 
 ## Install
 
+### From Marketplace
+
+Search for **MCP Servers Viewer** by **Oleh Popkov**, or install:
+
+```bash
+cursor --install-extension OlehPopkov.mcp-servers-viewer
+```
+
 ### From VSIX
 
 ```bash
-cursor --install-extension mcp-servers-viewer-0.1.2.vsix
+cursor --install-extension mcp-servers-viewer-0.1.3.vsix
 ```
 
 Then reload the window.
@@ -34,7 +44,7 @@ Then reload the window.
 ```bash
 npm install
 npx vsce package
-cursor --install-extension ./mcp-servers-viewer-0.1.2.vsix
+cursor --install-extension ./mcp-servers-viewer-0.1.3.vsix
 ```
 
 ## Commands
